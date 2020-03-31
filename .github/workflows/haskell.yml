@@ -14,10 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
    
-    - name: Lint 
-      uses: domdere/haskell-lint-action@v1.0.2
-      with:
-        secrets: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Lint 
+    #   uses: domdere/haskell-lint-action@v1.0.2
+    #   with:
+    #     secrets: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Setup stack
       uses: mstksg/setup-stack@v1
