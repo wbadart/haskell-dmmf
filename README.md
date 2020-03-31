@@ -3,19 +3,26 @@
 Haskell implementation of Wlashin's [Domain Modeling Made
 Functional][book]
 
-[book]: https://fsharpforfunandprofit.com/books/#domain-modeling-made-functional-ebook-and-paper
+In the book, author [Scott Wlashin][fsharp] makes a series of
+compelling arguments for 1) the value of domain-driven design (DDD)
+and 2) the effectiveness of functional programming techniques for
+realizing DDD. In particular, he shows how algebraic types can
+document the concepts of a domain and the relations between them and,
+critically, that this "compilable spec" is also readable by
+(non-technical) domain experts.
 
-I just got done reading Domain Modeling Made Functional, by Scott
-Wlashin of [fsharpforfunandprofit.com][fsharp] fame. It was a great
-introduction to Domain-Driven Design (DDD) which I think expertly
-made its argument that functional programming techniques mesh
-seamlessly with DDD. I thought I'd try my hand at translating some of
-his F# code to Haskell. I'm mostly going for a 1-1 transcription; the
-one twist I'll add is that I'll take this opportunity to play around
-with some applicative validation (he notes this approach in the book,
-sticks to the F# `Result` monad for simplicity).
+I for one was sold on the idea, so I sought practice. As a Haskeller,
+the obvious first step was transcribing the case study in the book
+from F# to Haskell. The repo is my attempt to do so.
 
-[fsharp]: https://fsharpforfunandprofit.com
+## Differences from the Book
+
+I'm writing this before really diving in, so I'm sure there will be
+future divergence, but so far this is the only one I really have
+planned:
+
+- Use applicative validation, rather than the `Result` (F#)/ `Either`
+  (Haskell) monad for smart constructors
 
 ## Setup
 
@@ -26,4 +33,7 @@ Just make sure you've got a decently modern version of
 $ stack build
 ```
 
+
+[book]: https://fsharpforfunandprofit.com/books/#domain-modeling-made-functional-ebook-and-paper
+[fsharp]: https://fsharpforfunandprofit.com
 [stack]: https://docs.haskellstack.org/en/stable/README/
