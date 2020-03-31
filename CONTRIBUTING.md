@@ -20,6 +20,11 @@ $ git clone https://github.com/wbadart/haskell-dmmf.git  # or your fork
 $ cd haskell-dmmf && stack build
 ```
 
+Down the line, I might play around with [`nix`][nix], but at least at
+the time of writing, it's a `stack` project (am definitely looking
+for advice as to how I might transition the project most smoothly
+from `stack` to `nix`!).
+
 ## Code Format
 
 I'm going to start things out by trying the [`brittany`][brit]
@@ -37,6 +42,7 @@ should pass these tests.
 
 
 [stack]: https://docs.haskellstack.org
+[nix]: https://nixos.org/nix
 [brit]: https://github.com/lspitzner/brittany
 [pre-commit]: https://pre-commit.com
 [actions]: https://github.com/wbadart/haskell-dmmf/actions
