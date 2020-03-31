@@ -1,5 +1,7 @@
 # haskell-dmmf
 
+[![Haskell CI][badge]][ci]
+
 Haskell implementation of Wlashin's [Domain Modeling Made
 Functional][book]
 
@@ -34,6 +36,8 @@ $ stack build
 ```
 
 
+[badge]: https://github.com/wbadart/haskell-dmmf/workflows/Haskell%20CI/badge.svg
+[ci]: https://github.com/wbadart/haskell-dmmf/actions
 [book]: https://fsharpforfunandprofit.com/books/#domain-modeling-made-functional-ebook-and-paper
 [fsharp]: https://fsharpforfunandprofit.com
 [stack]: https://docs.haskellstack.org/en/stable/README/
