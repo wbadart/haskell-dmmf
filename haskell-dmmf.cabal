@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7ce5a76d3bedcf56379f08ce4b627b155b3601f60bf8a019990849340075e328
+-- hash: aba306443b50b170064941d03e7baf4fe74b2a8a56575bbdb50bee4a71c29e0b
 
 name:           haskell-dmmf
 version:        0.1.0.0
@@ -19,7 +19,6 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 source-repository head
   type: git
@@ -27,6 +26,8 @@ source-repository head
 
 library
   exposed-modules:
+      Data.Domain.OrderTaking
+      Data.Domain.Util
       Lib
   other-modules:
       Paths_haskell_dmmf
