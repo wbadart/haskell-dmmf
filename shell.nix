@@ -6,6 +6,6 @@ in pkgs.mkShell {
       pkgs.haskellPackages.ghc
       pkgs.haskellPackages.ghcid
       pkgs.haskellPackages.brittany
-      pkgs.gcc  # needed for ghci (for some reason)
+      pkgs.gcc
     ];
 }
